@@ -104,7 +104,7 @@
         app:srcCompat="@drawable/iconpass" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btRegistroLogin"
         android:layout_width="155dp"
         android:layout_height="47dp"
         android:layout_marginBottom="44dp"

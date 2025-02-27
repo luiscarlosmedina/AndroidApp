@@ -62,7 +62,7 @@
         app:layout_constraintVertical_bias="0.842" />
 
     <Button
-        android:id="@+id/btRecuperar"
+        android:id="@+id/btRegistrar"
         android:layout_width="148dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"

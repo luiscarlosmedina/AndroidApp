@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/iconlogo" />
 
     <TextView
-        android:id="@+id/nameAppHome"
+        android:id="@+id/nameAppCarga"
         android:layout_width="289dp"
         android:layout_height="76dp"
         android:fontFamily="@font/agbalumo"
