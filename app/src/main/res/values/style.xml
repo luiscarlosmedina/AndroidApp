@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EditTextRounded" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text_rounded</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+    <style name="ButtonGoogle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_google</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textColor">@color/black</item> <!-- Asegura que el texto sea visible -->
+        <item name="android:textSize">18sp</item> <!-- Ajusta el tamaño del texto -->
+
+    </style>
+</resources>

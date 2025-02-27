@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SonajerApp</string>
+    <string name="author">Luis Carlos Medina Moreno</string>
+    <string name="login">Regístrate</string>
+    <string name="start">Comienza</string>
+    <string name="intro">Ingresar</string>
+    <string name="googleLogin">Ingresa con Google</string>
+    <string name="ask">No tienes cuenta? </string>
+    <string name="help">Recupera Tu Contraseña</string>
+    <string name="info">Inicia una nueva aventura con SonajerApp y descubre una nueva forma de ver el mundo</string>
+    <string name="infoLogin">La aventura está por iniciar, por favor inicia session</string>
+</resources>
