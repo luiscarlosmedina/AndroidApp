@@ -9,4 +9,12 @@
     <string name="help">Recupera Tu Contraseña</string>
     <string name="info">Inicia una nueva aventura con SonajerApp y descubre una nueva forma de ver el mundo</string>
     <string name="infoLogin">La aventura está por iniciar, por favor inicia session</string>
+    <string name="infoRegistro">Una aventura merece ser registrada, por favor diligencia los campos</string>
+    <string name="askRegistro">Ya tienes cuenta? </string>
+    <string name="conditions">Por favor acepta los Terminos y Condiciones</string>
+    <string name="infoRecupera">Para recuperar su contraseña ingresa tu correo electrónico</string>
+    <string name="sendMail">Enviar correo</string>
+    <string name="editar">Editar</string>
+
+
 </resources>

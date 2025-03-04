@@ -1,193 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray">
-
-    <ImageView
-        android:id="@+id/iconAppLogin"
-        android:layout_width="127dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconlogo" />
-
-    <TextView
-        android:id="@+id/nameAppLogin"
-        android:layout_width="222dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="52dp"
-        android:fontFamily="@font/agbalumo"
-        android:text="@string/app_name"
-        android:textAlignment="center"
-        android:textColor="@color/blue"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.391"
-        app:layout_constraintStart_toEndOf="@+id/iconAppLogin"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/infoLogin"
-        android:layout_width="209dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="148dp"
-        android:text="@string/infoLogin"
-        android:textAlignment="center"
-        android:textColor="@color/blue"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btLogin"
-        android:layout_width="241dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="56dp"
-        android:backgroundTint="@color/orange"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/intro"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPassLogin" />
-
-    <Button
-        android:id="@+id/btRecuperar"
-        android:layout_width="279dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/gray"
-        android:fontFamily="sans-serif"
-        android:text="@string/help"
-        android:textAllCaps="false"
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btLogin"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imgUser"
-        android:layout_width="57dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="252dp"
-        android:rotation="-90"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconuser" />
-
-    <ImageView
-        android:id="@+id/imgPass"
-        android:layout_width="58dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgUser"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/iconpass" />
-
-    <Button
-        android:id="@+id/btRegistroLogin"
-        android:layout_width="155dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="44dp"
-        android:backgroundTint="@color/gray"
-        android:text="@string/login"
-        android:textAlignment="textStart"
-        android:textColor="@color/orange"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.824"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/creaCuenta"
-        android:layout_width="191dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginBottom="48dp"
-        android:text="@string/ask"
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/textUserLogin"
-        style="@style/EditTextRounded"
-        android:layout_width="269dp"
-        android:layout_height="47dp"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/textPassLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
-        app:layout_constraintStart_toEndOf="@+id/imgUser"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.935" />
-
-    <EditText
-        android:id="@+id/textPassLogin"
-        style="@style/EditTextRounded"
-        android:layout_width="266dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="360dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
-        app:layout_constraintStart_toEndOf="@+id/imgPass" />
+    android:fillViewport="true">
 
     <LinearLayout
-        style="@style/ButtonGoogle"
-        android:layout_width="338dp"
-        android:layout_height="54dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:background="@color/gray">
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginEnd="8dp"
-            android:src="@drawable/icongoogle" />
+        <!-- Logo y Nombre de la App -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
 
-        <Button
-            android:id="@+id/btGoogleLogin"
-            android:layout_width="216dp"
+            <ImageView
+                android:id="@+id/iconAppLogin"
+                android:layout_width="117dp"
+                android:layout_height="106dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/iconlogo" />
+
+            <TextView
+                android:id="@+id/nameAppLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agbalumo"
+                android:text="@string/app_name"
+                android:textColor="@color/blue"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Mensaje de Información -->
+        <TextView
+            android:id="@+id/infoLogin"
+            android:layout_width="308dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:padding="0dp"
-            android:text="@string/googleLogin"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/infoLogin"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <!-- Usuario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_width="42dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="10dp"
+                android:rotation="-90"
+                android:src="@drawable/iconuser" />
+
+            <EditText
+                android:id="@+id/textUserLogin"
+                style="@style/EditTextRounded"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:hint="Usuario"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <!-- Contraseña -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/imgPass"
+                android:layout_width="42dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/iconpass"/>
+
+            <EditText
+                android:id="@+id/textPassLogin"
+                style="@style/EditTextRounded"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:hint="Contraseña"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+        <!-- Botón de Login -->
+        <Button
+            android:id="@+id/btEntrar"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/orange"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/intro"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <!-- Botón de Recuperación -->
+        <Button
+            android:id="@+id/btRecuperar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/help"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Login con Google -->
+        <LinearLayout
+            style="@style/ButtonGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/icongoogle" />
+
+            <Button
+                android:id="@+id/btGoogleLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="monospace"
+                android:text="@string/googleLogin"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <!-- Crear cuenta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/creaCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ask"
+                android:textColor="@color/blue"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btRegistroLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/login"
+                android:textColor="@color/orange"
+                android:textSize="18sp" />
+        </LinearLayout>
 
     </LinearLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
