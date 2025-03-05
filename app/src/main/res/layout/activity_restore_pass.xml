@@ -55,8 +55,6 @@
                 android:textStyle="italic" />
 
             <!-- 3. Solicitud de Correo Electrónico -->
-
-            <!-- 4. Botón de Envío de la Solicitud -->
             <EditText
                 android:id="@+id/recuperarCorreo"
                 style="@style/EditTextRounded"
@@ -64,6 +62,7 @@
                 android:layout_height="47dp"
                 android:layout_marginBottom="16dp"
                 android:hint="Correo Electrónico"
+                android:textColor="@color/orange"
                 android:inputType="textEmailAddress" />
 
             <Button

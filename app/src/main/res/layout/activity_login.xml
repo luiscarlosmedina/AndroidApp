@@ -73,6 +73,7 @@
                 android:layout_height="47dp"
                 android:layout_weight="1"
                 android:hint="Usuario"
+                android:textColor="@color/orange"
                 android:inputType="text"/>
         </LinearLayout>
 
@@ -98,6 +99,7 @@
                 android:layout_height="47dp"
                 android:layout_weight="1"
                 android:hint="Contraseña"
+                android:textColor="@color/orange"
                 android:inputType="textPassword"/>
         </LinearLayout>
 
@@ -138,8 +140,8 @@
             android:layout_marginBottom="20dp">
 
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:layout_marginEnd="8dp"
                 android:src="@drawable/icongoogle" />
 
@@ -152,7 +154,7 @@
                 android:text="@string/googleLogin"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="24sp" />
+                android:textSize="20sp" />
         </LinearLayout>
 
         <!-- Crear cuenta -->
