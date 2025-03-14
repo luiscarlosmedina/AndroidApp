@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
             if(validarCampos()){
 
                 //redireccionar al login
-                val intent = Intent(this, ProfileActivity::class.java)
+                val intent = Intent(this, verCalculosActivity::class.java)
                 startActivity(intent)
                 finish()
 

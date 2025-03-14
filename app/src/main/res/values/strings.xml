@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SonajerApp</string>
+    <string name="app_name">EventPlace</string>
     <string name="author">Luis Carlos Medina Moreno</string>
     <string name="login">Regístrate</string>
     <string name="start">Comienza</string>
@@ -15,6 +15,10 @@
     <string name="infoRecupera">Para recuperar su contraseña ingresa tu correo electrónico</string>
     <string name="sendMail">Enviar correo</string>
     <string name="editar">Editar</string>
+    <string name="calcular">Calcular</string>
+    <string name="estandar">Estándar</string>
+    <string name="basico">Basico</string>
+    <string name="premium">Premium</string>
 
 
 </resources>

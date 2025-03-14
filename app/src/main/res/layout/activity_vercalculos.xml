@@ -15,7 +15,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:gravity="center_horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -25,14 +26,14 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/recuperarIconoApp"
+                    android:id="@+id/verCalIconoApp"
                     android:layout_width="117dp"
                     android:layout_height="106dp"
                     android:layout_marginEnd="34dp"
                     android:src="@drawable/iconlogo" />
 
                 <TextView
-                    android:id="@+id/recuperarNombreApp"
+                    android:id="@+id/verCalNombreApp"
                     android:layout_width="216dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/agbalumo"
@@ -42,39 +43,26 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- 2. Mensaje Instructivo -->
-            <TextView
-                android:id="@+id/recuperarMensaje"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="@string/infoRecupera"
-                android:textAlignment="center"
-                android:textColor="@color/blue"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <!-- 3. Solicitud de Correo Electrónico -->
-            <EditText
-                android:id="@+id/recuperarCorreo"
-                style="@style/EditTextRounded"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:layout_marginBottom="16dp"
-                android:hint="Correo Electrónico"
-                android:textColor="@color/orange"
-                android:inputType="textEmailAddress" />
-
             <Button
-                android:id="@+id/recuperarBtnEnviar"
+                android:id="@+id/btnCalculadora"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:backgroundTint="@color/orange"
-                android:text="@string/sendMail"
-                android:textColor="@android:color/white"
                 android:fontFamily="sans-serif-light"
+                android:text="Nuevo calculo"
+                android:textColor="@android:color/white"
                 android:textSize="30sp" />
-
+            <Button
+                android:id="@+id/btncargaPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/orange"
+                android:fontFamily="sans-serif-light"
+                android:text="perfil"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
         </LinearLayout>
     </ScrollView>
 
