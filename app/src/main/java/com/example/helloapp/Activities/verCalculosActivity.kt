@@ -1,10 +1,10 @@
-package com.example.helloapp
+package com.example.helloapp.Activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatActivity.MODE_PRIVATE
+import com.example.helloapp.R
 
 class verCalculosActivity : AppCompatActivity() {
     private lateinit var buttonRegisterLogin: Button
