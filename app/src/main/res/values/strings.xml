@@ -15,6 +15,14 @@
     <string name="infoRecupera">Para recuperar su contraseña ingresa tu correo electrónico</string>
     <string name="sendMail">Enviar correo</string>
     <string name="editar">Editar</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="inicio" >Inicio</string>
+    <string name="productos"> Productos</string>
+    <string name="categorias"> Categorías</string>
+    <string name="carrito"> Carrito</string>
+    <string name="perfil">Perfil</string>
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Cerrar</string>
 
 
 </resources>

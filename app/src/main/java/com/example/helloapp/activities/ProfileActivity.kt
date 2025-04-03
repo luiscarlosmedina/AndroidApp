@@ -1,10 +1,11 @@
-package com.example.helloapp
+package com.example.helloapp.activities
 
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.helloapp.R
 
 class ProfileActivity : AppCompatActivity() {
     private lateinit var perfilApellido: TextView

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="inicio" />
+    <string name="productos" />
+    <string name="categorias" />
+    <string name="carrito" />
+    <string name="perfil">Perfil</string>
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Cerrar</string>
+</resources>

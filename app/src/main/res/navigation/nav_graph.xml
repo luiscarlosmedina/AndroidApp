@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment android:id="@+id/inicioFragment"
+        android:name="InicioFragment"
+        android:defaultNavHost="true"
+        android:label="@string/inicio"/>
+
+    <fragment android:id="@+id/productosFragment"
+        android:name="ProductosFragment"
+        android:label="@string/productos"/>
+
+    <fragment android:id="@+id/categoriasFragment"
+        android:name="CategoriasFragment"
+        android:label="@string/categorias"/>
+
+    <fragment android:id="@+id/carritoFragment"
+        android:name="CarritoFragment"
+        android:label="@string/carrito"/>
+
+</navigation>

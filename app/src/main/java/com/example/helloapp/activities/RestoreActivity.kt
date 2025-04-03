@@ -1,4 +1,4 @@
-package com.example.helloapp
+package com.example.helloapp.activities
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.helloapp.R
 
 class RestoreActivity : AppCompatActivity() {
     private lateinit var editTextCorreo: EditText

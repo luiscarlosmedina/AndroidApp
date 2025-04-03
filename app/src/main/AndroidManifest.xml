@@ -13,26 +13,26 @@
         android:theme="@style/Theme.HelloApp"
         tools:targetApi="31">
         <activity
-            android:name=".SplashActivity"
+            android:name=".activities.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"
+        <activity android:name=".activities.LoginActivity"
             android:exported="false">
         </activity>
-        <activity android:name=".HomeActivity"
+        <activity android:name=".activities.HomeActivity"
             android:exported="false">
         </activity>
-        <activity android:name=".ProfileActivity"
+        <activity android:name=".activities.ProfileActivity"
             android:exported="false">
         </activity>
-        <activity android:name=".RegisterActivity"
+        <activity android:name=".activities.RegisterActivity"
             android:exported="false">
         </activity>
-        <activity android:name=".RestoreActivity"
+        <activity android:name=".activities.RestoreActivity"
             android:exported="false">
         </activity>
         <meta-data
