@@ -28,11 +28,9 @@ class LoginActivity : AppCompatActivity() {
             if(validarCampos()){
 
                 //redireccionar al login
-                val intent = Intent(this, ProfileActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
-
-                limpiarCampos()
             }
 
         }
@@ -81,12 +79,8 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this, "Correo o contraseña incorrectos", Toast.LENGTH_SHORT).show()
             return false
         }
-        return true
 
     }
 
-    private fun limpiarCampos() {
-        editTextCorreo.text.clear()
-        editTextContrasena.text.clear()
-    }
+
 }

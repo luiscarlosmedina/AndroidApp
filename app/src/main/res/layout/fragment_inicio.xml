@@ -3,15 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/gray">
 
+    <ImageView
+        android:id="@+id/logoAppHome"
+        android:layout_width="196dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconlogo" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/inicio"
+        tools:text="@string/bienvenido"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:fontFamily="@font/agbalumo"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/mensaje_inicio_fragment"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="25sp"/>
+        android:textSize="20sp"/>
 
 </LinearLayout>

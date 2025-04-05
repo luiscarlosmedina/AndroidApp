@@ -4,21 +4,29 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/inicioFragment">
 
-    <fragment android:id="@+id/inicioFragment"
-        android:name="InicioFragment"
-        android:defaultNavHost="true"
-        android:label="@string/inicio"/>
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.helloapp.fragments.InicioFragment"
+        android:label="@string/inicio" />
 
-    <fragment android:id="@+id/productosFragment"
-        android:name="ProductosFragment"
-        android:label="@string/productos"/>
+    <fragment
+        android:id="@+id/productosFragment"
+        android:name="com.example.helloapp.fragments.ProductosFragment"
+        android:label="@string/productos" />
 
-    <fragment android:id="@+id/categoriasFragment"
-        android:name="CategoriasFragment"
-        android:label="@string/categorias"/>
+    <fragment
+        android:id="@+id/categoriasFragment"
+        android:name="com.example.helloapp.fragments.CategoriasFragment"
+        android:label="@string/categorias" />
 
-    <fragment android:id="@+id/carritoFragment"
-        android:name="CarritoFragment"
-        android:label="@string/carrito"/>
+    <fragment
+        android:id="@+id/carritoFragment"
+        android:name="com.example.helloapp.fragments.CarritoFragment"
+        android:label="@string/carrito" />
+
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.helloapp.fragments.PerfilFragment"
+        android:label="@string/perfil" />
 
 </navigation>

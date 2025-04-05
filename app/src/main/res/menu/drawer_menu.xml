@@ -12,5 +12,9 @@
 
         <item android:id="@+id/carrito"
             android:title="@string/carrito"/>
+
+        <item android:id="@+id/perfil"
+            android:title="@string/perfil"/>
+
     </group>
 </menu>

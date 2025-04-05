@@ -45,9 +45,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:name="androidx.navigation.fragment.NavHostFragment"
-            android:tag="nav_host_fragment"
             app:defaultNavHost="true"
             app:navGraph="@navigation/nav_graph"/>
+
 
     </LinearLayout>
 
@@ -56,6 +56,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/nav_view"
         android:layout_gravity="start"
+        android:gravity="start"
         android:background="@color/white"
         app:menu="@menu/drawer_menu"
         app:headerLayout="@layout/drawer_header"/>

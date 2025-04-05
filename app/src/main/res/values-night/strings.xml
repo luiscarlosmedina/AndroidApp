@@ -8,4 +8,16 @@
     <string name="perfil">Perfil</string>
     <string name="open_drawer">Abrir</string>
     <string name="close_drawer">Cerrar</string>
+    <string name="mensaje_inicio_fragment">Es tu portal para adquirir colecciones de tus artistas favoritos</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="correo_electr_nico">Correo Electrónico</string>
+    <string name="tel">Teléfono</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="repetir_contrase_a">Repetir Contraseña</string>
+    <string name="precio">$5000</string>
+    <string name="tp_producto">Camiseta</string>
+    <string name="categor_a">Categoría</string>
+    <string name="electr_nica">Electrónica</string>
+    <string name="ropa">Ropa</string>
 </resources>
