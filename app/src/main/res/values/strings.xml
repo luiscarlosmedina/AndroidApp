@@ -36,6 +36,10 @@
     <string name="categor_a">Categoría</string>
     <string name="electr_nica">Electrónica</string>
     <string name="ropa">Ropa</string>
+    <string name="correo">Correo</string>
+    <string name="tel_fono">Teléfono</string>
+    <string name="nombre">Nombre</string>
+    <string name="imagen_de_perfil">Imagen de perfil</string>
 
 
 </resources>

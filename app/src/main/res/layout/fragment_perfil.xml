@@ -20,11 +20,12 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginBottom="16dp"
-            android:contentDescription="Imagen de perfil"
+            android:contentDescription="@string/imagen_de_perfil"
             android:rotation="-90"
             android:src="@drawable/iconuser" />
 
         <!-- 2. Visualización de nombres -->
+        <!-- Nombre -->
         <TextView
             android:id="@+id/perfilNombre"
             android:layout_width="match_parent"
@@ -35,7 +36,15 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <!-- 3. Visualización de apellidos -->
+        <!-- EditText para editar nombre -->
+        <EditText
+            android:id="@+id/editPerfilNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre"
+            android:visibility="gone" />
+
+        <!-- Apellidos -->
         <TextView
             android:id="@+id/perfilApellidos"
             android:layout_width="match_parent"
@@ -45,7 +54,15 @@
             android:textColor="@color/black"
             android:textSize="18sp" />
 
-        <!-- 4. Visualización de correo electrónico -->
+        <!-- EditText para editar apellidos -->
+        <EditText
+            android:id="@+id/editPerfilApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/apellidos"
+            android:visibility="gone" />
+
+        <!-- Correo -->
         <TextView
             android:id="@+id/perfilCorreo"
             android:layout_width="match_parent"
@@ -55,7 +72,16 @@
             android:textColor="@color/black"
             android:textSize="16sp" />
 
-        <!-- 5. Visualización de número de teléfono -->
+        <!-- EditText para editar correo -->
+        <EditText
+            android:id="@+id/editPerfilCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/correo"
+            android:inputType="textEmailAddress"
+            android:visibility="gone" />
+
+        <!-- Teléfono -->
         <TextView
             android:id="@+id/perfilTelefono"
             android:layout_width="match_parent"
@@ -64,6 +90,15 @@
             android:gravity="center"
             android:textColor="@color/black"
             android:textSize="16sp" />
+
+        <!-- EditText para editar teléfono -->
+        <EditText
+            android:id="@+id/editPerfilTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tel_fono"
+            android:inputType="phone"
+            android:visibility="gone" />
 
         <!-- 6. Botón de Editar -->
         <Button
