@@ -2,31 +2,22 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/inicioFragment">
-
-    <fragment
-        android:id="@+id/inicioFragment"
-        android:name="com.example.helloapp.fragments.InicioFragment"
-        android:label="@string/inicio" />
-
-    <fragment
-        android:id="@+id/productosFragment"
-        android:name="com.example.helloapp.fragments.ProductosFragment"
-        android:label="@string/productos" />
-
-    <fragment
-        android:id="@+id/categoriasFragment"
-        android:name="com.example.helloapp.fragments.CategoriasFragment"
-        android:label="@string/categorias" />
-
-    <fragment
-        android:id="@+id/carritoFragment"
-        android:name="com.example.helloapp.fragments.CarritoFragment"
-        android:label="@string/carrito" />
+    app:startDestination="@id/perfilFragment">
 
     <fragment
         android:id="@+id/perfilFragment"
         android:name="com.example.helloapp.fragments.PerfilFragment"
-        android:label="@string/perfil" />
+        android:label="@string/mis_datos" />
+
+    <fragment
+        android:id="@+id/analisisFragment"
+        android:name="com.example.helloapp.fragments.AnalisisFragment"
+        android:label="@string/analisis" />
+
+    <fragment
+        android:id="@+id/historicoFragment"
+        android:name="com.example.helloapp.fragments.HistoricoFragment"
+        android:label="@string/historico" />
+
 
 </navigation>

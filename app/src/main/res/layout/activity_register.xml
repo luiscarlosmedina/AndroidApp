@@ -52,18 +52,19 @@
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
             android:layout_height="47dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
             android:hint="@string/nombres"
             android:paddingHorizontal="15dp"
             android:textColor="@color/orange" />
 
         <EditText
-            android:id="@+id/etApellidos"
+            android:id="@+id/etEdad"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
             android:layout_height="47dp"
             android:layout_marginTop="10dp"
-            android:hint="@string/apellidos"
+            android:inputType="number"
+            android:hint="@string/edad"
             android:textColor="@color/orange" />
 
         <EditText
@@ -77,13 +78,23 @@
             android:textColor="@color/orange" />
 
         <EditText
-            android:id="@+id/etTelefono"
+            android:id="@+id/etSemestre"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
             android:layout_height="47dp"
             android:layout_marginTop="10dp"
-            android:hint="@string/tel"
-            android:inputType="phone"
+            android:hint="@string/semestre"
+            android:inputType="number"
+            android:textColor="@color/orange" />
+
+        <EditText
+            android:id="@+id/etPrograma"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/programa_academico"
+            android:paddingHorizontal="15dp"
             android:textColor="@color/orange" />
 
         <EditText

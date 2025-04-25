@@ -13,9 +13,10 @@ import com.example.helloapp.R
 class RegisterActivity : AppCompatActivity() {
 
     private lateinit var editTextNombres: EditText
-    private lateinit var editTextApellidos: EditText
+    private lateinit var editTextEdad: EditText
     private lateinit var editTextCorreo: EditText
-    private lateinit var editTextTelefono: EditText
+    private lateinit var editTextPrograma: EditText
+    private lateinit var editTextSemestre: EditText
     private lateinit var editTextContrasena: EditText
     private lateinit var editTextConfirmarContrasena: EditText
     private lateinit var buttonRegistro: Button
@@ -31,9 +32,10 @@ class RegisterActivity : AppCompatActivity() {
         Log.d("RegisterActivity", "onCreate: inicializando el activity de registro")
 
         editTextNombres = findViewById(R.id.etNombres)
-        editTextApellidos = findViewById(R.id.etApellidos)
+        editTextEdad = findViewById(R.id.etEdad)
         editTextCorreo = findViewById(R.id.etCorreo)
-        editTextTelefono = findViewById(R.id.etTelefono)
+        editTextPrograma = findViewById(R.id.etPrograma)
+        editTextSemestre = findViewById(R.id.etSemestre)
         editTextContrasena = findViewById(R.id.etContrasena)
         editTextConfirmarContrasena = findViewById(R.id.etRepetirContrasena)
         buttonRegistro = findViewById(R.id.btnRegistro)
@@ -51,8 +53,6 @@ class RegisterActivity : AppCompatActivity() {
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
                 finish()
-
-                limpiarCampos()
             }
 
         }
@@ -61,25 +61,30 @@ class RegisterActivity : AppCompatActivity() {
     }
     private fun validarCampos(): Boolean {
         val nombres = editTextNombres.text.toString().trim()
-        val apellidos = editTextApellidos.text.toString().trim()
+        val edad = editTextEdad.text.toString().trim()
         val correo = editTextCorreo.text.toString().trim()
-        val telefono = editTextTelefono.text.toString().trim()
+        val programa = editTextPrograma.text.toString().trim()
+        val semestre = editTextSemestre.text.toString().trim()
         val contrasena = editTextContrasena.text.toString().trim()
         val confirmarContrasena = editTextConfirmarContrasena.text.toString().trim()
         if (nombres.isEmpty()) {
             Toast.makeText(this, "Por favor, ingresa tu nombre", Toast.LENGTH_SHORT).show()
             return false
         }
-        if( apellidos.isEmpty()){
-            Toast.makeText(this, "Por favor, ingresa tu apellido", Toast.LENGTH_SHORT).show()
+        if( edad.isEmpty()){
+            Toast.makeText(this, "Por favor, ingresa tu edad", Toast.LENGTH_SHORT).show()
             return false
         }
         if(correo.isEmpty()){
             Toast.makeText(this, "Por favor, ingresa tu correo", Toast.LENGTH_SHORT).show()
             return false
         }
-        if(telefono.isEmpty()){
-            Toast.makeText(this, "Por favor, ingresa tu telefono", Toast.LENGTH_SHORT).show()
+        if(programa.isEmpty()){
+            Toast.makeText(this, "Por favor, ingresa tu programa", Toast.LENGTH_SHORT).show()
+            return false
+        }
+        if(semestre.isEmpty()){
+            Toast.makeText(this, "Por favor, ingresa tu semestre", Toast.LENGTH_SHORT).show()
             return false
         }
         if(contrasena.isEmpty()){
@@ -88,10 +93,6 @@ class RegisterActivity : AppCompatActivity() {
         }
         if(confirmarContrasena.isEmpty()) {
             Toast.makeText(this, "Por favor, confirma tu contraseña", Toast.LENGTH_SHORT).show()
-            return false
-        }
-        if (!android.util.Patterns.PHONE.matcher(telefono).matches()) {
-            Toast.makeText(this, "Por favor, ingresa un número de teléfono válido", Toast.LENGTH_SHORT).show()
             return false
         }
         if (!android.util.Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
@@ -109,21 +110,13 @@ class RegisterActivity : AppCompatActivity() {
     private fun guardarDatos() {
         val editor = sharedPreferences.edit()
         editor.putString("nombres", editTextNombres.text.toString().trim())
-        editor.putString("apellidos", editTextApellidos.text.toString().trim())
+        editor.putString("edad", editTextEdad.text.toString().trim())
         editor.putString("correo", editTextCorreo.text.toString().trim())
-        editor.putString("telefono", editTextTelefono.text.toString().trim())
+        editor.putString("semestre", editTextSemestre.text.toString().trim())
+        editor.putString("programa", editTextPrograma.text.toString().trim())
         editor.putString("contrasena", editTextContrasena.text.toString().trim())
         editor.apply()
         Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
-    }
-
-    private fun limpiarCampos() {
-        editTextNombres.text.clear()
-        editTextApellidos.text.clear()
-        editTextCorreo.text.clear()
-        editTextTelefono.text.clear()
-        editTextContrasena.text.clear()
-        editTextConfirmarContrasena.text.clear()
     }
 
 }

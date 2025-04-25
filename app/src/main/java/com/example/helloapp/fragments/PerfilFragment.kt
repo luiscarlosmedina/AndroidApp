@@ -6,9 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
+import android.widget.*
 import androidx.fragment.app.Fragment
 import com.example.helloapp.R
 
@@ -17,14 +15,16 @@ class PerfilFragment : Fragment(R.layout.fragment_perfil) {
     private lateinit var sharedPreferences: SharedPreferences
 
     private lateinit var perfilNombre: TextView
-    private lateinit var perfilApellido: TextView
+    private lateinit var perfilEdad: TextView
     private lateinit var perfilCorreo: TextView
-    private lateinit var perfilTelefono: TextView
+    private lateinit var perfilPrograma: TextView
+    private lateinit var perfilSemestre: TextView
 
     private lateinit var editNombre: EditText
-    private lateinit var editApellido: EditText
+    private lateinit var editEdad: EditText
     private lateinit var editCorreo: EditText
-    private lateinit var editTelefono: EditText
+    private lateinit var editPrograma: EditText
+    private lateinit var editSemestre: EditText
 
     private lateinit var botonEditar: Button
 
@@ -35,7 +35,6 @@ class PerfilFragment : Fragment(R.layout.fragment_perfil) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_perfil, container, false)
     }
 
@@ -44,60 +43,61 @@ class PerfilFragment : Fragment(R.layout.fragment_perfil) {
 
         sharedPreferences = requireActivity().getSharedPreferences("UserData", Context.MODE_PRIVATE)
 
-        perfilNombre = view.findViewById(R.id.perfilNombre)
-        perfilApellido = view.findViewById(R.id.perfilApellidos)
-        perfilCorreo = view.findViewById(R.id.perfilCorreo)
-        perfilTelefono = view.findViewById(R.id.perfilTelefono)
+        // TextViews
+        perfilNombre = view.findViewById(R.id.viewPerfilNombre)
+        perfilEdad = view.findViewById(R.id.viewPerfilEdad)
+        perfilCorreo = view.findViewById(R.id.viewPerfilCorreo)
+        perfilPrograma = view.findViewById(R.id.viewPerfilPrograma)
+        perfilSemestre = view.findViewById(R.id.viewPerfilSemestre)
 
+        // EditTexts
         editNombre = view.findViewById(R.id.editPerfilNombre)
-        editApellido = view.findViewById(R.id.editPerfilApellidos)
+        editEdad = view.findViewById(R.id.editPerfilEdad)
         editCorreo = view.findViewById(R.id.editPerfilCorreo)
-        editTelefono = view.findViewById(R.id.editPerfilTelefono)
+        editPrograma = view.findViewById(R.id.editPerfilPrograma)
+        editSemestre = view.findViewById(R.id.editPerfilSemestre)
 
         botonEditar = view.findViewById(R.id.perfilBtnEditar)
 
         // Cargar datos actuales
-        val nombre = sharedPreferences.getString("nombres", "")
-        val apellido = sharedPreferences.getString("apellidos", "")
+        val nombre = sharedPreferences.getString("nombre", "")
+        val edad = sharedPreferences.getString("edad", "")
         val correo = sharedPreferences.getString("correo", "")
-        val telefono = sharedPreferences.getString("telefono", "")
+        val programa = sharedPreferences.getString("programa", "")
+        val semestre = sharedPreferences.getString("semestre", "")
 
         perfilNombre.text = nombre
-        perfilApellido.text = apellido
+        perfilEdad.text = edad
         perfilCorreo.text = correo
-        perfilTelefono.text = telefono
+        perfilPrograma.text = programa
+        perfilSemestre.text = semestre
 
-        // Botón para alternar edición
         botonEditar.setOnClickListener {
             if (!editando) {
-                // Mostrar campos para editar
-                toggleCampos(visible = true)
-
-                // Llenar los campos con el texto actual
+                toggleCampos(true)
                 editNombre.setText(nombre)
-                editApellido.setText(apellido)
+                editEdad.setText(edad)
                 editCorreo.setText(correo)
-                editTelefono.setText(telefono)
-
+                editPrograma.setText(programa)
+                editSemestre.setText(semestre)
                 botonEditar.text = "Guardar"
                 editando = true
             } else {
-                // Guardar cambios
                 val editor = sharedPreferences.edit()
-                editor.putString("nombres", editNombre.text.toString())
-                editor.putString("apellidos", editApellido.text.toString())
+                editor.putString("nombre", editNombre.text.toString())
+                editor.putString("edad", editEdad.text.toString())
                 editor.putString("correo", editCorreo.text.toString())
-                editor.putString("telefono", editTelefono.text.toString())
+                editor.putString("programa", editPrograma.text.toString())
+                editor.putString("semestre", editSemestre.text.toString())
                 editor.apply()
 
-                // Actualizar los TextView
                 perfilNombre.text = editNombre.text
-                perfilApellido.text = editApellido.text
+                perfilEdad.text = editEdad.text
                 perfilCorreo.text = editCorreo.text
-                perfilTelefono.text = editTelefono.text
+                perfilPrograma.text = editPrograma.text
+                perfilSemestre.text = editSemestre.text
 
-                // Volver a vista normal
-                toggleCampos(visible = false)
+                toggleCampos(false)
                 botonEditar.text = "Editar"
                 editando = false
             }
@@ -109,14 +109,15 @@ class PerfilFragment : Fragment(R.layout.fragment_perfil) {
         val editVis = if (visible) View.VISIBLE else View.GONE
 
         perfilNombre.visibility = vis
-        perfilApellido.visibility = vis
+        perfilEdad.visibility = vis
         perfilCorreo.visibility = vis
-        perfilTelefono.visibility = vis
+        perfilPrograma.visibility = vis
+        perfilSemestre.visibility = vis
 
         editNombre.visibility = editVis
-        editApellido.visibility = editVis
+        editEdad.visibility = editVis
         editCorreo.visibility = editVis
-        editTelefono.visibility = editVis
+        editPrograma.visibility = editVis
+        editSemestre.visibility = editVis
     }
 }
-

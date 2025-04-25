@@ -26,79 +26,25 @@
 
         <!-- 2. Visualización de nombres -->
         <!-- Nombre -->
-        <TextView
-            android:id="@+id/perfilNombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+        <TextView android:id="@+id/viewPerfilNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/nombre" android:textAlignment="center"/>
+        <EditText android:id="@+id/editPerfilNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/nombre" android:visibility="gone" android:textAlignment="center" style="@style/EditTextRounded" android:textColor="@color/orange" />
 
-        <!-- EditText para editar nombre -->
-        <EditText
-            android:id="@+id/editPerfilNombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/nombre"
-            android:visibility="gone" />
-
-        <!-- Apellidos -->
-        <TextView
-            android:id="@+id/perfilApellidos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <!-- EditText para editar apellidos -->
-        <EditText
-            android:id="@+id/editPerfilApellidos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/apellidos"
-            android:visibility="gone" />
+        <!-- Edad -->
+        <TextView android:id="@+id/viewPerfilEdad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/edad" android:textAlignment="center"/>
+        <EditText android:id="@+id/editPerfilEdad" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/edad" android:inputType="number" android:visibility="gone" android:textAlignment="center" style="@style/EditTextRounded" android:textColor="@color/orange"/>
 
         <!-- Correo -->
-        <TextView
-            android:id="@+id/perfilCorreo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
+        <TextView android:id="@+id/viewPerfilCorreo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/correo" android:textAlignment="center"/>
+        <EditText android:id="@+id/editPerfilCorreo" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/correo" android:inputType="textEmailAddress" android:visibility="gone" android:textAlignment="center" style="@style/EditTextRounded" android:textColor="@color/orange"/>
 
-        <!-- EditText para editar correo -->
-        <EditText
-            android:id="@+id/editPerfilCorreo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/correo"
-            android:inputType="textEmailAddress"
-            android:visibility="gone" />
+        <!-- Programa académico -->
+        <TextView android:id="@+id/viewPerfilPrograma" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/programa_acad_mico" android:textAlignment="center"/>
+        <EditText android:id="@+id/editPerfilPrograma" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/programa_acad_mico" android:visibility="gone" android:textAlignment="center" style="@style/EditTextRounded" android:textColor="@color/orange"/>
 
-        <!-- Teléfono -->
-        <TextView
-            android:id="@+id/perfilTelefono"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
+        <!-- Semestre -->
+        <TextView android:id="@+id/viewPerfilSemestre" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/semestre" android:textAlignment="center"/>
+        <EditText android:id="@+id/editPerfilSemestre" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/semestre" android:inputType="number" android:visibility="gone" android:textAlignment="center" style="@style/EditTextRounded" android:textColor="@color/orange"/>
 
-        <!-- EditText para editar teléfono -->
-        <EditText
-            android:id="@+id/editPerfilTelefono"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/tel_fono"
-            android:inputType="phone"
-            android:visibility="gone" />
 
         <!-- 6. Botón de Editar -->
         <Button
